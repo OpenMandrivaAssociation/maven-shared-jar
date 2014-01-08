@@ -1,7 +1,6 @@
-%_javapackages_macros
 Name:           maven-shared-jar
 Version:        1.1
-Release:        5.0%{?dist}
+Release:        5%{?dist}
 # Maven-shared defines maven-shared-jar version as 1.1
 Epoch:          1
 Summary:        Maven JAR Utilities
@@ -62,3 +61,22 @@ find -name 'pom.xml' -exec sed \
 
 %files javadoc -f .mfiles-javadoc
 %doc LICENSE NOTICE
+
+
+%changelog
+* Mon Aug 05 2013 Michal Srb <msrb@redhat.com> - 1:1.1-5
+- Adapt to current guidelines
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1:1.1-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Wed Feb 06 2013 Java SIG <java-devel@lists.fedoraproject.org> - 1:1.1-3
+- Update for https://fedoraproject.org/wiki/Fedora_19_Maven_Rebuild
+- Replace maven BuildRequires with maven-local
+
+* Wed Jan 23 2013 Tomas Radej <tradej@redhat.com> - 1:1.1-2
+- Removed jars and skipped tests
+
+* Tue Jan 15 2013 Tomas Radej <tradej@redhat.com> - 1:1.1-1
+- Initial version
+
