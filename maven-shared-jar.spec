@@ -1,9 +1,11 @@
+%{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-shared-jar
 Version:        1.1
-Release:        5%{?dist}
+Release:        8.1
 # Maven-shared defines maven-shared-jar version as 1.1
 Epoch:          1
 Summary:        Maven JAR Utilities
+Group:		Development/Java
 License:        ASL 2.0
 URL:            http://maven.apache.org/shared/maven-shared-jar
 Source0:        http://repo1.maven.org/maven2/org/apache/maven/shared/%{name}/%{version}/%{name}-%{version}-source-release.zip
@@ -13,7 +15,7 @@ BuildArch:      noarch
 BuildRequires:  maven-local
 BuildRequires:  mvn(commons-collections:commons-collections)
 BuildRequires:  mvn(org.apache.bcel:bcel)
-BuildRequires:  mvn(org.apache.maven.shared:maven-shared-components)
+BuildRequires:  mvn(org.apache.maven.shared:maven-shared-components:pom:)
 BuildRequires:  mvn(org.apache.maven:maven-artifact)
 BuildRequires:  mvn(org.apache.maven:maven-model)
 BuildRequires:  mvn(org.codehaus.plexus:plexus-container-default)
