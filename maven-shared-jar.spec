@@ -1,7 +1,7 @@
 %{?_javapackages_macros:%_javapackages_macros}
 Name:           maven-shared-jar
 Version:        1.1
-Release:        8.1
+Release:        8.2
 # Maven-shared defines maven-shared-jar version as 1.1
 Epoch:          1
 Summary:        Maven JAR Utilities
